@@ -138,6 +138,8 @@ def play(board)
 
   if over?(board) == true
     turn(board)
-
+  else won?(board)
+    "Congrats #{winner?(board)}"
+  end
 
 end
