@@ -134,9 +134,11 @@ end
 
 def play(board)
   input = gets
-
-  while !over?(board)
+  counter = 1
+  
+  until over?(board)
     turn(board)
+    counter += 1
   end
 
   if won?(board)
