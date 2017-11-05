@@ -136,4 +136,8 @@ def play(board)
 
   input = gets
 
+  if over?(board) == true
+    turn(board)
+
+
 end
