@@ -134,13 +134,12 @@ end
 
 def play(board)
   input = gets
-  counter = 1
-  
+
   until over?(board)
     turn(board)
-    counter += 1
   end
 
+  winner = winner(board)
   if won?(board)
     puts "Congrats #{winner}!"
   else draw?(board)
