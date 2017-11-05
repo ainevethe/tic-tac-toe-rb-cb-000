@@ -135,15 +135,14 @@ end
 def play(board)
   input = gets
 
-  while over?(board) != true
+  while !over?(board)
     turn(board)
-    break
   end
 
   if won?(board)
-    puts "Congrats #{winner(board)}"
+    puts "Congrats #{winner}!"
   else draw?(board)
-    puts "Sorry, game was a draw."
+    puts "Cat's Game!"
   end
 
 end
