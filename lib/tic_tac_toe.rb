@@ -133,9 +133,7 @@ def winner(board)
 end
 
 def play(board)
-  turns = 0
-  until turns == 9
-    turn(board)
-    turns += 1
-  end
+
+  input = gets
+
 end
